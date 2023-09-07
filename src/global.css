@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background: #1D1D1D;
+}
+
+h1 {
+    color: #FABF59;
+    text-align: center;
+    font-family: Bluu Next Cyrillic, serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 125%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.error-page {
+    height: 100vh;
+    text-align: center;
+}
+
+.header-error {
+    font-size: 4em;
+    padding-top: 30vh;
+}
+
+.text-error {
+    font-size: 2em;
+    color: #FABF59;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bg-image {
+        background-position: left;
+    }
+
+    .container .content {
+        flex-direction: column;
+        padding-bottom: 50px;
+        height: 100%;
+    }
+
+    .container .content .persons {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .content img {
+        height: 60vw;
+    }
+
+    .btn-main {
+        width: 100%;
+    }
+    
+    .characters-header {
+        width: 100%;
+    }
+
+    .characters-list {
+        width: 100%;
+    }
+
+    .characters-info h3 {
+        font-size: 18px;
+    }
+
+    .characters-info p {
+        font-size: 10px;
+    }
+
+    .characters-info .more-info {
+        font-size: 10px;
+    }
+
+    .more-info .arrow {
+        left: 80px;
+        top: 2px;
+    }
+    
+    .more-info .ellipse {
+        left: 100px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .header, .characters-header {
+        width: 90%;
+        max-width: 750px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+     
+    .characters-header h1 {
+        max-width: 750px;
+    }
+
+    .characters-info h3 {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+
+    .characters-list li {
+        height: 28vw;
+        min-width: 300px;
+    }
+
+    .characters-info p {
+        font-size: 1.3em;
+        line-height: 26px;
+
+    }
+
+    .characters-info .more-info {
+        font-size: 1.3em;
+
+    }
+
+    .more-info .arrow {
+        left: 180px;
+        top: 2px;
+    }
+
+    .more-info .ellipse {
+        left: 200px;
+        top: 4px;
+    }
+
+    .btn-main {
+        width: 80%;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .content {
+        margin: 0 120px;
+    }
+
+    .persons .content-link {
+        font-size: 23px;
+        height: 60px;
+    }
+
+    .back-side p, .back-side span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    nav {
+        border-radius: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 50%;
+    }
+
+    nav ul li .selected {
+        border-radius: 20px;
+    }
+}

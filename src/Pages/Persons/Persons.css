@@ -1,0 +1,70 @@
+nav {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+}
+
+nav ul li .set-house {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    font-family: Bluu Next Cyrillic;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li .set-house::before{
+    content: '';
+    display: inline-flex;
+    width: 23px;
+    height: 32px;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.gryffindor::before {
+    background: url('./img/logo-g.png');
+}
+
+.slytherin::before {
+    background: url('./img/logo-r.png');
+}
+
+.ravenclaw::before {
+    background: url('https://s3-alpha-sig.figma.com/img/b88b/41b7/921d01fe7bcff9b19f01714b7d934055?Expires=1694390400&Signature=F1vsEbKHvX0IR-Z9zqqNJ3xul9rRiRajh2KGe7kvirI9buxxJlLw9Dq9KRGkq0yHevnWtJErCc5tlNJZEyFoNzwNTQqHwMyi6QigmS03jMDUorlRrQG3lyE6jzkOy0w3xN675DbcVisaiDhajxy8z77AELIBgWnOh~wN1NdcvJzRqAa6B0GDPZV81McRpoYigfMwUiBPrgnY9AdoxkAuIkUNnMWA2oaSccV1ILzOFa2gViZc99TGQHYi2OEwMxVniotV3NSri-paK4IsaWETB~wDIIP7-PRoWnYbQsTDwo9GsHkOzpt74vr13jm8e72la-MML5SKhZM~aAs5OQToaQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+}
+
+.hufflepuff::before {
+    background: url('./img/logo-h.png');
+}
+
+nav ul li .active-link {
+    background: #F9B50C;
+    color: #1D1D1D;
+}

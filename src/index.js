@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Main from "./Pages/Main/Main";
+import Students from "./Pages/Students/Students";
+import Staff from "./Pages/Staff/Staff";
+import Persons from "./Pages/Persons/Persons";
+import ErrorPage from "./Pages/Error/Error";
+import './global.css';
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+    Route,
+    Outlet
+} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const Root = () => {
+    return (
+        <div className="container">
+            <Outlet />
+        </div>
+    )
+}
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index element={<Main />} />
+      <Route path="students" element={<Students />} />
+      <Route path="staff" element={<Staff />} />
+      <Route path="persons" element={<Persons />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Route>
+  )
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
