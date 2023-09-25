@@ -20,7 +20,6 @@
     position: absolute;
     bottom: 0;
     background: linear-gradient(0deg, #1D1D1D 14.33%, rgba(29, 29, 29, 0.00) 41.43%);
-    flex-shrink: 0;
 }
 
 .header {
