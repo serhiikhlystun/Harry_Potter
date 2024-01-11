@@ -1,132 +1,137 @@
 .characters-header {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .characters-header h1 {
-    max-width: 615px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    margin: auto;
+  max-width: 615px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin: auto;
 }
 
 .characters-list {
-    width: 80%;
-    margin: 0px auto;
+  width: 80%;
+  margin: 0px auto;
 }
 
 .characters-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 60px;
 }
 
 .characters-list li {
-    display: flex;
-    flex-direction: column;
-    width: 22%;
-    min-width: 220px;
-    min-height: 330px;
-    margin: 0 10px 20px;
-    position: relative;
-    transition: transform .8s;
-    transform-style: preserve-3d;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  min-width: 220px;
+  min-height: 330px;
+  margin: 0 10px 20px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  list-style-type: none;
 }
 
 .characters-list li:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .gradient {
-    width: 100%;
-    height: 60%;
-    position: absolute;
-    bottom: 0;
-    border-radius: 20px;
-    background: linear-gradient(0deg, #0F0F0F -0.99%, rgba(15, 15, 15, 0.74) 51.85%, rgba(15, 15, 15, 0.00) 86.04%);
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    #0f0f0f -0.99%,
+    rgba(15, 15, 15, 0.74) 51.85%,
+    rgba(15, 15, 15, 0) 86.04%
+  );
 }
 
 .characters-list li img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .characters-info {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    z-index: 2;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    font-family: Inter, sans-serif;
-    line-height: 140%;
-    font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  z-index: 2;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+  font-size: 14px;
 }
 
 .characters-info h3 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .characters-info p {
-    color: #FABF59;
+  color: #fabf59;
 }
 
 .characters-info .more-info {
-    margin-top: 15px;
-    color: #FFF;
-    position: relative;
+  margin-top: 15px;
+  color: #fff;
+  position: relative;
 }
 
 .more-info .arrow {
-    width: 14px;
-    height: 24px;
-    margin-left: 10px;
-    position: absolute;
-    left: 120px;
-    z-index: 2;
-    top: 2px;
+  width: 14px;
+  height: 24px;
+  margin-left: 10px;
+  position: absolute;
+  left: 120px;
+  z-index: 2;
+  top: 2px;
 }
 
 .more-info .ellipse {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 140px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 140px;
 }
 .front-side {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .back-side {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    transform: rotateY(180deg);
-    background-color: grey;
-    border-radius: 20px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    box-sizing: border-box;
-    font-family: Inter;
-    font-size: 12px;
-    line-height: 140%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  transform: rotateY(180deg);
+  background-color: grey;
+  border-radius: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-size: 10px;
+  line-height: 140%;
 }
 
 .back-side p {
-    color: #FFF;
+  color: #fff;
 }
 
 .back-side span {
-    color: #FABF59;
-    text-transform: capitalize;
+  color: #fabf59;
+  text-transform: capitalize;
 }
